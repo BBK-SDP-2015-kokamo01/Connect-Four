@@ -10,7 +10,7 @@ class Game(private var activePlayer: Solver, private var player2: Solver) {
   def this(p1: Solver,
            p2: Solver,
            b: Board,
-           p: Boolean) {
+           p: Boolean) { //active player
     this(p1, p2)
     board = b
     activePlayer = (if (p) p1 else p2)
@@ -30,6 +30,7 @@ class Game(private var activePlayer: Solver, private var player2: Solver) {
     while (!isGameOver) {
       var moveIsSafe = false
       var nextMove: Move = null
+
       while (!moveIsSafe) {
         val bestMoves = activePlayer.getMoves(board)
         if (bestMoves.length == 0) {
