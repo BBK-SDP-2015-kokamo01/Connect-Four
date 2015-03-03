@@ -1,6 +1,8 @@
 class AI(private var player: Player, private var depth: Int) extends Solver {
 
-  override def getMoves(b: Board): Array[Move] = ???
+  override def getMoves(b: Board): Array[Move] = {
+    b.getPossibleMoves(player)
+  }
 
   def minimax(s: State) {
   }
