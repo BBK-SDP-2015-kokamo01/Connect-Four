@@ -1,2 +1,4 @@
 # Connect-Four
-Connect four in Scala. Paired programming and GUI practice 
+Connect four in Scala. Paired programming and GUI practice
+
+[![Build Status](https://travis-ci.org/BBK-SDP-2015-kokamo01/Pair.svg?branch=master)](https://travis-ci.org/BBK-SDP-2015-kokamo01/Pair)
