@@ -1,40 +1,64 @@
-private val board = Array.ofDim[String](3, 3)
 
-board(0)(0) = "a"
-board(0)(1) = "a"
-board(0)(2) = "a"
+val board = Array.ofDim[String](3, 3)
+    //R //C
+board(0)(0) = "0"
+board(0)(1) = "0"
+board(0)(2) = "0"
 
-board(1)(0) = "b"
-board(1)(1) = "b"
+board(1)(0) = "2"
+board(1)(1) = "2"
 
-board(2)(1) = "z"
+board(2)(1) = "8"
 
 println(board(2)(0)+ "    " + board(2)(1)+ "   " + board(2)(2))
 println(board(1)(0)+ "    " + board(1)(1)+ "   " + board(1)(2))
 println(board(0)(0)+ "    " + board(0)(1)+ "   " + board(0)(2))
 
-//Takes in array of int, returns a boolean||
-val pp: (Array[Int]) => Boolean = (row: Array[Int]) => row(3) == null
 
-//lastIndexOf is being called on every element
-val lastIndx = board.lastIndexOf(pp)
+board.foreach((a)=>{
+  a.foreach(print(_))
+  println()
+})
 
-board.foreach((a)=> a.foreach(println(_)))
+board.transpose.foreach((a)=>{
+  a.foreach(print(_))
+  println()
+})
+
+val newBoard = board.transpose.zipWithIndex
+  .filter(a => a._1.contains(null))
+  .map(p => new Move(RED, p._2))
+
+newBoard
+
+//(([0,2,null],0),([0,2,8],1))
+
+//val posMove = newBoard.filter(a => a._1.contains(null))
+
+newBoard.foreach((a)=>{
+  println(a)
+})
 
 
-
-//[2]
-//[1][1]
-//[0][0][0]
-
-//55
-//45
-//35
+//if a = null, there is a move availabel
 
 
+/*
+val vector1 = Vector(1,2,9,3,7,4,5)
+val list = List(1,2,9,3,7,4,5)
 
-//val row = board.last((row: Array[String])=> row(3) == null)
-//println("pkmo " + row)
+val newVector = list.filter(_ % 2 == 1)
+list.filter(_ % 2 == 1)
 
+val fruit = Array("apple", "Orange", "grape", "tomato", "banana")
+val fruitsWith5Letters = fruit.filter(n => n.length == 5)
 
-//move p and free col
+val smellyFruit = fruit.map(e => e + "POO")
+val list1 = List(2,3,4,5,6,2,1)
+//val newList1 = list1.map(x => (x * 2))
+val otherlist = List(1,2,3)
+val list2 = List(5,4,3,2,1)
+otherlist.zip(list2)
+val listIndex = list2.view.zipWithIndex foreach {el => println(el._1, el._2)}
+//list.fold()
+*/

@@ -43,52 +43,17 @@ class Board {
   def makeMove(move: Move): Unit = {
     //if 5 has a piece it returns the one above
     //val p: (Array[Player]) => Boolean = _(move.column) == null
-
-    val row = board.lastIndexWhere(_(move.column) == null) //_ infer variables, wildcard
+    val row = board.lastIndexWhere(_(move.column) == null)
     board(row)(move.column) = move.player
   }
 
   def getTile(row: Int, col: Int): Player = board(row)(col)
 
+  //Worksheet has steps!
   def getPossibleMoves(p: Player): Array[Move] = {
-    //get cells of the last row.
-    // Move is made of: Move(var player: Player, var column: Int)
-    //get the last empty row and pass the player and column in
-
-    //if col has null it's available
-    //val lastIndx = board.lastIndexOf((col: Array[Player]) => col(Board.NUM_COLS) == null)
-    //var z = new Array[String](3)
-
-    //search column for null if it has null break out
-    //save row, col!
-    //move on to next col
-    //if not don't record
-
-    val lastIndx = board.lastIndexOf((col: Array[Player]) => col(Board.NUM_COLS) == null)
-
-//    var col = 0
-//    var row = 0
-//    while (col < Board.NUM_COLS) {
-//      while (row < Board.NUM_ROWS) {
-//        if (board(row)(col) == null){
-//          //store it
-//          col+=1
-//        }
-//        row+=1
-//      }
-//      val move: Move = new Move(p, col)
-//    }
-
-//    var col = 0;
-//    var list: List(0);
-//    while (col > Board.NUM_COLS){
-//      val element = board(col).last
-//      if (element != null) {
-//        var a:Move = new Move(p, col)
-//
-//      }
-//      return
-//    }
+    board.transpose.zipWithIndex
+      .filter(a => a._1.contains(null))
+      .map(column => new Move(p, column._2))
   }
 
   override def toString(): String = ???
