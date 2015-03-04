@@ -1,6 +1,3 @@
-import javax.swing.BorderFactory
-
-import scala.collection.GenSeq
 import scala.collection.mutable.ListBuffer
 
 class Board {
@@ -34,20 +31,20 @@ class Board {
 //    board(row)(move.column) = move.player
 //  }
 
+
 //  //Anonymous function Scala!
 //  def makeMove(move: Move): Unit = {
 //    val row = board.lastIndexWhere((row: Array[Player]) => row(move.column) == null)
 //    board(row)(move.column) = move.player
 //  }
 
+  def getTile(row: Int, col: Int): Player = board(row)(col)
+
   def makeMove(move: Move): Unit = {
-    //if 5 has a piece it returns the one above
     //val p: (Array[Player]) => Boolean = _(move.column) == null
     val row = board.lastIndexWhere(_(move.column) == null)
     board(row)(move.column) = move.player
   }
-
-  def getTile(row: Int, col: Int): Player = board(row)(col)
 
   //Worksheet has steps!
   def getPossibleMoves(p: Player): Array[Move] = {
