@@ -1,10 +1,16 @@
 class AI(private var player: Player, private var depth: Int) extends Solver {
 
+  //array of moves with values, should be sorted, best move should be at head of list
   override def getMoves(b: Board): Array[Move] = {
     b.getPossibleMoves(player)
   }
 
-  def minimax(s: State) {
+  // minimax works out the best move, kind of.
+  //Value bubbles up, this needs to be implemented next
+  def minimax(state: State): Unit = {
+    if (state == null) return
+    state.getChildren.foreach(child => minimax(child))
+    state.setValue(evaluateBoard(state.getBoard))
   }
 
   /**

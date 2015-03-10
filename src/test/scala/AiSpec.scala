@@ -1,9 +1,11 @@
 import org.scalatest.FlatSpec
 
+/**
+ * Manual tests.
+ */
 class AiSpec extends FlatSpec {
 
   "AI" should "create a game tree" in {
-    val ai = AI
     val player = RED
     val board = Board()
     val move = new Move(player, 3)
@@ -23,7 +25,21 @@ class AiSpec extends FlatSpec {
 
     val state = new State(player, board, move)
 
-    ai.createGameTree(state, 3)
+    AI.createGameTree(state, 3)
+    state.writeToFile()
+  }
+
+  "AI" should "evaluate minimax" in {
+    val player = RED
+    val depth = 3
+
+    val board = Board()
+    val move1 = new Move(player, 0)
+    val state = new State(player, board, move1)
+
+    AI.createGameTree(state, depth)
+    val ai = new AI(player, depth);
+    ai.minimax(state)
     state.writeToFile()
   }
 }
