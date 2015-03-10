@@ -1,3 +1,5 @@
+import java.io.PrintWriter
+
 //
 //val board = Array.ofDim[Int](3, 3)
 //    //R //C
@@ -63,10 +65,14 @@ val listIndex = list2.view.zipWithIndex foreach {el => println(el._1, el._2)}
 //list.fold()
 */
 
+/*
 val k = List(1,2,3)
 k.map(n => n * 2)
 
 val winner = Option.empty
 println(!winner.isDefined)
+*/
 
-
+val writer = new PrintWriter("poo.txt", "UTF-8")
+writer.println("poo")
+writer.close()

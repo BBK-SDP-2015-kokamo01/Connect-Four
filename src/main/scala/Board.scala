@@ -24,29 +24,13 @@ class Board {
     makeMove(nextMove)
   }
 
-  //Java!
-//  def makeMove(move: Move): Unit = {
-//    var row = Board.NUM_ROWS - 1;
-//    while (getTile(row, move.column) != null) row -= 1
-//    board(row)(move.column) = move.player
-//  }
-
-
-//  //Anonymous function Scala!
-//  def makeMove(move: Move): Unit = {
-//    val row = board.lastIndexWhere((row: Array[Player]) => row(move.column) == null)
-//    board(row)(move.column) = move.player
-//  }
-
   def getTile(row: Int, col: Int): Player = board(row)(col)
 
   def makeMove(move: Move): Unit = {
-    //val p: (Array[Player]) => Boolean = _(move.column) == null
     val row = board.lastIndexWhere(_(move.column) == null)
     board(row)(move.column) = move.player
   }
 
-  //Worksheet has steps!
   def getPossibleMoves(p: Player): Array[Move] = {
     board.transpose.zipWithIndex
       .filter(a => a._1.contains(null))
