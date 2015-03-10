@@ -40,7 +40,7 @@ class AI(private var player: Player, private var depth: Int) extends Solver {
 object AI {
 
   def createGameTree(state: State, d: Int): Unit = {
-    if (d == 0) return
+    if (d == 0 || state.getBoard.hasConnectFour().isDefined) return
     state.initializeChildren()
     state.getChildren.foreach(child => createGameTree(child, d-1))
   }
