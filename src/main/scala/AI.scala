@@ -1,9 +1,19 @@
 class AI(private var player: Player, private var depth: Int) extends Solver {
 
   //array of moves with values, should be sorted, best move should be at head of list
-  //each possible move is pushed into minimax
+  //each possible move is pushed into minimaxcd ..
   override def getMoves(b: Board): Array[Move] = {
-    b.getPossibleMoves(player)
+    val moves = b.getPossibleMoves(player)
+
+    val states = moves.map(nextMove => {
+      val state = new State(player, new Board(b, nextMove), nextMove)
+      AI.createGameTree(state, depth)
+      minimax(state)
+      state
+    })
+
+    val sorted = states.sortBy(state => -state.getValue)
+    sorted.map(state => state.getLastMove)
   }
 
   def minimax(state: State): Unit = {
