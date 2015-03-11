@@ -25,7 +25,7 @@ class AI(private var player: Player, private var depth: Int) extends Solver {
       state.setValue(evaluateBoard(state.getBoard))
     } else {
       val values = children.map(_.getValue)
-      state.setValue(if(player != state.getPlayer) values.min else values.max)
+      state.setValue(if(player == state.getPlayer) values.min else values.max)
     }
   }
 
