@@ -1,16 +1,23 @@
 class AI(private var player: Player, private var depth: Int) extends Solver {
 
   //array of moves with values, should be sorted, best move should be at head of list
+  //each possible move is pushed into minimax
   override def getMoves(b: Board): Array[Move] = {
     b.getPossibleMoves(player)
   }
 
-  // minimax works out the best move, kind of.
-  //Value bubbles up, this needs to be implemented next
   def minimax(state: State): Unit = {
-    if (state == null) return
-    state.getChildren.foreach(child => minimax(child))
-    state.setValue(evaluateBoard(state.getBoard))
+    val children = state.getChildren
+    children.foreach(minimax)
+
+    if (children.isEmpty) {
+      state.setValue(evaluateBoard(state.getBoard))
+    }
+    /*else {
+      val values = children.map(_.getValue)
+      state.setValue(if(player != state.getPlayer) values.min else values.max)
+    }
+    */
   }
 
   /**
@@ -22,7 +29,7 @@ class AI(private var player: Player, private var depth: Int) extends Solver {
     val winner = b.hasConnectFour() //option[Players]
     var value = 0
     if (!winner.isDefined) { //empty Option is present
-      val locs = b.winLocations()//List[Array[Players]]
+      val locs = b.winLocations() //List[Array[Players]]
       for (loc <- locs; p <- loc) { // Double for loop
         value += (if (p == player) 1 else if (p != null) -1 else 0) //min max settings
       }
