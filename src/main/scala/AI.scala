@@ -29,18 +29,13 @@ class AI(private var player: Player, private var depth: Int) extends Solver {
     }
   }
 
-  /**
-   * This method will evaluate the nodes for us
-   * @param b
-   * @return
-   */
   def evaluateBoard(b: Board): Int = {
-    val winner = b.hasConnectFour() //option[Players]
+    val winner = b.hasConnectFour()
     var value = 0
-    if (!winner.isDefined) { //empty Option is present
-      val locs = b.winLocations() //List[Array[Players]]
-      for (loc <- locs; p <- loc) { // Double for loop
-        value += (if (p == player) 1 else if (p != null) -1 else 0) //min max settings
+    if (!winner.isDefined) {
+      val locs = b.winLocations()
+      for (loc <- locs; p <- loc) {
+        value += (if (p == player) 1 else if (p != null) -1 else 0)
       }
     } else {
       var numEmpty = 0
@@ -48,12 +43,12 @@ class AI(private var player: Player, private var depth: Int) extends Solver {
       while (r < Board.NUM_ROWS) {
         var c = 0
         while (c < Board.NUM_COLS) {
-          if (b.getTile(r, c) == null) numEmpty += 1 // counting empty cells
+          if (b.getTile(r, c) == null) numEmpty += 1
           c = c + 1
         }
         r = r + 1
       }
-      value = (if (winner.get == player) 1 else -1) * 10000 * numEmpty // Setting node values
+      value = (if (winner.get == player) 1 else -1) * 10000 * numEmpty
     }
     value
   }

@@ -10,7 +10,7 @@ class Game(private var activePlayer: Solver, private var player2: Solver) {
   def this(p1: Solver,
            p2: Solver,
            b: Board,
-           p: Boolean) { //active player
+           p: Boolean) {
     this(p1, p2)
     board = b
     activePlayer = (if (p) p1 else p2)
