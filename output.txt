@@ -1,5 +1,5 @@
 RED to play
-Value: 0
+Value: -14
 | | | | | | | |
 | | | | | | | |
 | | | | | | | |
@@ -10,7 +10,7 @@ Value: 0
 Children at depth 1:
 ----------------
    YELLOW to play
-   Value: 0
+   Value: -8
    | | | | | | | |
    | | | | | | | |
    | | | | | | | |
@@ -21,7 +21,7 @@ Children at depth 1:
    Children at depth 2:
    ----------------
       RED to play
-      Value: 0
+      Value: -13
       | | | | | | | |
       | | | | | | | |
       | | | | | | | |
@@ -95,7 +95,7 @@ Children at depth 1:
          |Y| | | | | |Y|
 
       RED to play
-      Value: 0
+      Value: -11
       | | | | | | | |
       | | | | | | | |
       | | | | | | | |
@@ -169,7 +169,7 @@ Children at depth 1:
          |Y|R| | | | |Y|
 
       RED to play
-      Value: 0
+      Value: -9
       | | | | | | | |
       | | | | | | | |
       | | | | | | | |
@@ -243,7 +243,7 @@ Children at depth 1:
          |Y| |R| | | |Y|
 
       RED to play
-      Value: 0
+      Value: -8
       | | | | | | | |
       | | | | | | | |
       | | | | | | | |
@@ -317,7 +317,7 @@ Children at depth 1:
          |Y| | |R| | |Y|
 
       RED to play
-      Value: 0
+      Value: -8
       | | | | | | | |
       | | | | | | | |
       | | | | | | | |
@@ -391,7 +391,7 @@ Children at depth 1:
          |Y| | | |R| |Y|
 
       RED to play
-      Value: 0
+      Value: -8
       | | | | | | | |
       | | | | | | | |
       | | | | | | | |
@@ -465,7 +465,7 @@ Children at depth 1:
          |Y| | | | |R|Y|
 
       RED to play
-      Value: 0
+      Value: -8
       | | | | | | | |
       | | | | | | | |
       | | | | | | | |
@@ -539,7 +539,7 @@ Children at depth 1:
          |Y| | | | | |R|
 
    YELLOW to play
-   Value: 0
+   Value: -10
    | | | | | | | |
    | | | | | | | |
    | | | | | | | |
@@ -550,7 +550,7 @@ Children at depth 1:
    Children at depth 2:
    ----------------
       RED to play
-      Value: 0
+      Value: -15
       | | | | | | | |
       | | | | | | | |
       | | | | | | | |
@@ -624,7 +624,7 @@ Children at depth 1:
          |R|Y| | | | |Y|
 
       RED to play
-      Value: 0
+      Value: -12
       | | | | | | | |
       | | | | | | | |
       | | | | | | | |
@@ -698,7 +698,7 @@ Children at depth 1:
          | |Y| | | | |Y|
 
       RED to play
-      Value: 0
+      Value: -11
       | | | | | | | |
       | | | | | | | |
       | | | | | | | |
@@ -772,7 +772,7 @@ Children at depth 1:
          | |Y|R| | | |Y|
 
       RED to play
-      Value: 0
+      Value: -10
       | | | | | | | |
       | | | | | | | |
       | | | | | | | |
@@ -846,7 +846,7 @@ Children at depth 1:
          | |Y| |R| | |Y|
 
       RED to play
-      Value: 0
+      Value: -10
       | | | | | | | |
       | | | | | | | |
       | | | | | | | |
@@ -920,7 +920,7 @@ Children at depth 1:
          | |Y| | |R| |Y|
 
       RED to play
-      Value: 0
+      Value: -10
       | | | | | | | |
       | | | | | | | |
       | | | | | | | |
@@ -994,7 +994,7 @@ Children at depth 1:
          | |Y| | | |R|Y|
 
       RED to play
-      Value: 0
+      Value: -10
       | | | | | | | |
       | | | | | | | |
       | | | | | | | |
@@ -1068,7 +1068,7 @@ Children at depth 1:
          | |Y| | | | |R|
 
    YELLOW to play
-   Value: 0
+   Value: -12
    | | | | | | | |
    | | | | | | | |
    | | | | | | | |
@@ -1079,7 +1079,7 @@ Children at depth 1:
    Children at depth 2:
    ----------------
       RED to play
-      Value: 0
+      Value: -17
       | | | | | | | |
       | | | | | | | |
       | | | | | | | |
@@ -1153,7 +1153,7 @@ Children at depth 1:
          |R| |Y| | | |Y|
 
       RED to play
-      Value: 0
+      Value: -15
       | | | | | | | |
       | | | | | | | |
       | | | | | | | |
@@ -1227,7 +1227,7 @@ Children at depth 1:
          | |R|Y| | | |Y|
 
       RED to play
-      Value: 0
+      Value: -12
       | | | | | | | |
       | | | | | | | |
       | | | | | | | |
@@ -1301,7 +1301,7 @@ Children at depth 1:
          | | |Y| | | |Y|
 
       RED to play
-      Value: 0
+      Value: -12
       | | | | | | | |
       | | | | | | | |
       | | | | | | | |
@@ -1375,7 +1375,7 @@ Children at depth 1:
          | | |Y|R| | |Y|
 
       RED to play
-      Value: 0
+      Value: -12
       | | | | | | | |
       | | | | | | | |
       | | | | | | | |
@@ -1449,7 +1449,7 @@ Children at depth 1:
          | | |Y| |R| |Y|
 
       RED to play
-      Value: 0
+      Value: -12
       | | | | | | | |
       | | | | | | | |
       | | | | | | | |
@@ -1523,7 +1523,7 @@ Children at depth 1:
          | | |Y| | |R|Y|
 
       RED to play
-      Value: 0
+      Value: -12
       | | | | | | | |
       | | | | | | | |
       | | | | | | | |
@@ -1597,7 +1597,7 @@ Children at depth 1:
          | | |Y| | | |R|
 
    YELLOW to play
-   Value: 0
+   Value: -14
    | | | | | | | |
    | | | | | | | |
    | | | | | | | |
@@ -1608,7 +1608,7 @@ Children at depth 1:
    Children at depth 2:
    ----------------
       RED to play
-      Value: 0
+      Value: -20
       | | | | | | | |
       | | | | | | | |
       | | | | | | | |
@@ -1682,7 +1682,7 @@ Children at depth 1:
          |R| | |Y| | |Y|
 
       RED to play
-      Value: 0
+      Value: -18
       | | | | | | | |
       | | | | | | | |
       | | | | | | | |
@@ -1756,7 +1756,7 @@ Children at depth 1:
          | |R| |Y| | |Y|
 
       RED to play
-      Value: 0
+      Value: -16
       | | | | | | | |
       | | | | | | | |
       | | | | | | | |
@@ -1830,7 +1830,7 @@ Children at depth 1:
          | | |R|Y| | |Y|
 
       RED to play
-      Value: 0
+      Value: -14
       | | | | | | | |
       | | | | | | | |
       | | | | | | | |
@@ -1904,7 +1904,7 @@ Children at depth 1:
          | | | |Y| | |Y|
 
       RED to play
-      Value: 0
+      Value: -14
       | | | | | | | |
       | | | | | | | |
       | | | | | | | |
@@ -1978,7 +1978,7 @@ Children at depth 1:
          | | | |Y|R| |Y|
 
       RED to play
-      Value: 0
+      Value: -14
       | | | | | | | |
       | | | | | | | |
       | | | | | | | |
@@ -2052,7 +2052,7 @@ Children at depth 1:
          | | | |Y| |R|Y|
 
       RED to play
-      Value: 0
+      Value: -14
       | | | | | | | |
       | | | | | | | |
       | | | | | | | |
@@ -2126,7 +2126,7 @@ Children at depth 1:
          | | | |Y| | |R|
 
    YELLOW to play
-   Value: 0
+   Value: -14
    | | | | | | | |
    | | | | | | | |
    | | | | | | | |
@@ -2137,7 +2137,7 @@ Children at depth 1:
    Children at depth 2:
    ----------------
       RED to play
-      Value: 0
+      Value: -20
       | | | | | | | |
       | | | | | | | |
       | | | | | | | |
@@ -2211,7 +2211,7 @@ Children at depth 1:
          |R| | | |Y| |Y|
 
       RED to play
-      Value: 0
+      Value: -18
       | | | | | | | |
       | | | | | | | |
       | | | | | | | |
@@ -2285,7 +2285,7 @@ Children at depth 1:
          | |R| | |Y| |Y|
 
       RED to play
-      Value: 0
+      Value: -16
       | | | | | | | |
       | | | | | | | |
       | | | | | | | |
@@ -2359,7 +2359,7 @@ Children at depth 1:
          | | |R| |Y| |Y|
 
       RED to play
-      Value: 0
+      Value: -14
       | | | | | | | |
       | | | | | | | |
       | | | | | | | |
@@ -2433,7 +2433,7 @@ Children at depth 1:
          | | | |R|Y| |Y|
 
       RED to play
-      Value: 0
+      Value: -14
       | | | | | | | |
       | | | | | | | |
       | | | | | | | |
@@ -2507,7 +2507,7 @@ Children at depth 1:
          | | | | |Y| |Y|
 
       RED to play
-      Value: 0
+      Value: -14
       | | | | | | | |
       | | | | | | | |
       | | | | | | | |
@@ -2581,7 +2581,7 @@ Children at depth 1:
          | | | | |Y|R|Y|
 
       RED to play
-      Value: 0
+      Value: -14
       | | | | | | | |
       | | | | | | | |
       | | | | | | | |
@@ -2655,7 +2655,7 @@ Children at depth 1:
          | | | | |Y| |R|
 
    YELLOW to play
-   Value: 0
+   Value: -14
    | | | | | | | |
    | | | | | | | |
    | | | | | | | |
@@ -2666,7 +2666,7 @@ Children at depth 1:
    Children at depth 2:
    ----------------
       RED to play
-      Value: 0
+      Value: -20
       | | | | | | | |
       | | | | | | | |
       | | | | | | | |
@@ -2740,7 +2740,7 @@ Children at depth 1:
          |R| | | | |Y|Y|
 
       RED to play
-      Value: 0
+      Value: -18
       | | | | | | | |
       | | | | | | | |
       | | | | | | | |
@@ -2814,7 +2814,7 @@ Children at depth 1:
          | |R| | | |Y|Y|
 
       RED to play
-      Value: 0
+      Value: -16
       | | | | | | | |
       | | | | | | | |
       | | | | | | | |
@@ -2888,7 +2888,7 @@ Children at depth 1:
          | | |R| | |Y|Y|
 
       RED to play
-      Value: 0
+      Value: -14
       | | | | | | | |
       | | | | | | | |
       | | | | | | | |
@@ -2962,7 +2962,7 @@ Children at depth 1:
          | | | |R| |Y|Y|
 
       RED to play
-      Value: 0
+      Value: -14
       | | | | | | | |
       | | | | | | | |
       | | | | | | | |
@@ -3036,7 +3036,7 @@ Children at depth 1:
          | | | | |R|Y|Y|
 
       RED to play
-      Value: 0
+      Value: -14
       | | | | | | | |
       | | | | | | | |
       | | | | | | | |
@@ -3110,7 +3110,7 @@ Children at depth 1:
          | | | | | |Y|Y|
 
       RED to play
-      Value: 0
+      Value: -14
       | | | | | | | |
       | | | | | | | |
       | | | | | | | |
@@ -3184,7 +3184,7 @@ Children at depth 1:
          | | | | | |Y|R|
 
    YELLOW to play
-   Value: 0
+   Value: -14
    | | | | | | | |
    | | | | | | | |
    | | | | | | | |
@@ -3195,7 +3195,7 @@ Children at depth 1:
    Children at depth 2:
    ----------------
       RED to play
-      Value: 0
+      Value: -20
       | | | | | | | |
       | | | | | | | |
       | | | | | | | |
@@ -3269,7 +3269,7 @@ Children at depth 1:
          |R| | | | | |Y|
 
       RED to play
-      Value: 0
+      Value: -18
       | | | | | | | |
       | | | | | | | |
       | | | | | | | |
@@ -3343,7 +3343,7 @@ Children at depth 1:
          | |R| | | | |Y|
 
       RED to play
-      Value: 0
+      Value: -16
       | | | | | | | |
       | | | | | | | |
       | | | | | | | |
@@ -3417,7 +3417,7 @@ Children at depth 1:
          | | |R| | | |Y|
 
       RED to play
-      Value: 0
+      Value: -14
       | | | | | | | |
       | | | | | | | |
       | | | | | | | |
@@ -3491,7 +3491,7 @@ Children at depth 1:
          | | | |R| | |Y|
 
       RED to play
-      Value: 0
+      Value: -14
       | | | | | | | |
       | | | | | | | |
       | | | | | | | |
@@ -3565,7 +3565,7 @@ Children at depth 1:
          | | | | |R| |Y|
 
       RED to play
-      Value: 0
+      Value: -14
       | | | | | | | |
       | | | | | | | |
       | | | | | | | |
@@ -3639,7 +3639,7 @@ Children at depth 1:
          | | | | | |R|Y|
 
       RED to play
-      Value: 0
+      Value: -14
       | | | | | | | |
       | | | | | | | |
       | | | | | | | |

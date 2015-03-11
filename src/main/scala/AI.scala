@@ -12,12 +12,10 @@ class AI(private var player: Player, private var depth: Int) extends Solver {
 
     if (children.isEmpty) {
       state.setValue(evaluateBoard(state.getBoard))
-    }
-    /*else {
+    } else {
       val values = children.map(_.getValue)
       state.setValue(if(player != state.getPlayer) values.min else values.max)
     }
-    */
   }
 
   /**
